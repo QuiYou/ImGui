@@ -3669,6 +3669,8 @@ void ImGui::Shutdown()
     g.TablesTempData.clear_destruct();
     g.DrawChannelsTempMergeBuffer.clear();
 
+    g.MultiSelectStorage.Clear();
+
     g.ClipboardHandlerData.clear();
     g.MenusIdSubmittedThisFrame.clear();
     g.InputTextState.ClearFreeMemory();
